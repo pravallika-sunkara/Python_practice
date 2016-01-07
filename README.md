@@ -1,3 +1,3 @@
-# Python_practic
+# Python_practice
 
 This is read me file
