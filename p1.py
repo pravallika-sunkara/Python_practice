@@ -1,4 +1,4 @@
-'''Problem: Write a program for sorting elements of an array in descending order'''
+'''Problem: Write a program for sorting elements of an array in descending order and find the largest number.'''
 
 import random
 def desc(A):
@@ -10,6 +10,9 @@ def desc(A):
         A[i]=A[j]
         A[j]=temp
   print "Descending order of elements:", A
+  
+def max_element(A):
+  print "Largest number in the array:",max(A)
 
 if __name__=='__main__':
   N=int(raw_input("Enter the number of elements in the array:"))
@@ -19,3 +22,4 @@ if __name__=='__main__':
     A.append(p)
   print "Original elements in the array:",A
   desc(A)
+  max_element(A)
