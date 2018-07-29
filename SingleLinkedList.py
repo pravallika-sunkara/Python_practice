@@ -41,16 +41,14 @@ class LinkedList:
             temp = temp.next
             
     def search(self,data):
-        current=self.head
-        found =False
-        while current and found == False:
+        current = self.head
+        found = False
+        while current != None and not found:
             if current.data == data:
-                found= True
+                found = True
             else:
-                current.next
-        if current.next is None:
-            print("Data not in list")
-        return (current.data)
+                current = current.next
+        return found
     
     def size(self):
         count = 0
